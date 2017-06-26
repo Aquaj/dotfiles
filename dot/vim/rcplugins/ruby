@@ -1,0 +1,5 @@
+" Ruby - ruby syntax and snippets
+
+Plugin 'vim-ruby/vim-ruby'
+
+" vim:ft=vim

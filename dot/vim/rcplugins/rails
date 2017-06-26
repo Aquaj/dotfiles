@@ -1,0 +1,5 @@
+" Rails - rails integration  and syntax
+
+Plugin 'tpope/vim-rails'
+
+" vim:ft=vim

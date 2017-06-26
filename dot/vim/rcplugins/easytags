@@ -1,0 +1,5 @@
+" EasyTags - vim ctags system
+
+Plugin 'xolox/vim-easytags'
+
+" vim:ft=vim

@@ -1,0 +1,5 @@
+" Tmux-Navigator - allows seamless pane navigation between vim and tmux
+
+Plugin 'christoomey/vim-tmux-navigator'
+
+" vim:ft=vim

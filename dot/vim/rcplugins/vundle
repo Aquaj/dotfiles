@@ -1,0 +1,6 @@
+" Vundle - Plugin management system for vim
+
+Plugin 'VundleVim/Vundle.vim'
+
+" vim:ft=vim
+

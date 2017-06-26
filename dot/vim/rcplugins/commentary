@@ -1,0 +1,5 @@
+" Commentary - comment manipulation
+
+Plugin 'tpope/vim-commentary'
+
+" vim:ft=vim

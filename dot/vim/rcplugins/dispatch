@@ -1,0 +1,6 @@
+" Dispatch - asynchronous build and test dispatcher
+
+Plugin 'tpope/vim-dispatch'
+
+" vim:ft=vim
+

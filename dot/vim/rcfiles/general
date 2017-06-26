@@ -1,0 +1,36 @@
+" General settings
+"-----------------
+
+" Detect filetype and load plugin/identation for it
+filetype plugin indent on
+
+" Set terminal title
+set title
+
+" Enable syntax highlighting
+syntax on
+
+" Longer history
+set history=1000
+
+" Allow to backspace over anything
+set backspace=indent,eol,start
+
+" Softtabs, 2 spaces
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
+" Set encoding to utf-8
+if has("multi_byte")
+  set encoding=utf-8
+  setglobal fileencoding=utf-8
+else
+  echoerr "Sorry, this version of (g)vim was not compiled with +multi_byte"
+endif
+
+" Centralize .swps
+set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+
+" vim:ft=vim

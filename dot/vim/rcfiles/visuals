@@ -1,0 +1,59 @@
+" Visual/display related configs
+"-------------------------------
+
+" Color theme
+colorscheme monokai
+
+" automatically rebalance windows on vim resize
+autocmd VimResized * :wincmd =
+
+" display whitespace
+set list listchars=tab:»·,trail:·,nbsp:·
+
+" Ensure we have a bit of a buffer around the cursor
+set scrolloff=3
+
+" 80 chars marker
+set textwidth=80
+" 120 chars marker
+let &colorcolumn="80,".join(range(120,999),",")
+" Marker column color
+highlight ColorColumn ctermbg=235 guibg=#2c2d27
+
+" Display line numbers
+set number
+set numberwidth=5
+
+" Highlight current line
+augroup BgHighlight
+  autocmd!
+  autocmd WinEnter * set cul
+  autocmd WinLeave * set nocul
+augroup END
+
+" StatusLine configuration
+set statusline=\ %f           " Path to the file
+set statusline+=\ %m          " Modified flag
+set statusline+=\ %y          " Filetype
+set statusline+=%=          " Switch to the right side
+set statusline+=%l          " current line
+set statusline+=/%L       " Total lines
+
+" Show current command in bottom right corner
+set showcmd
+
+" Zoom in/out of panes
+nnoremap <leader>+ :wincmd _<CR>:wincmd \|<CR>
+nnoremap <leader>= :wincmd =<CR>
+
+" Scroll viewport faster
+nnoremap <C-e> 3<C-e>
+nnoremap <C-y> 3<C-y>
+
+" Folding
+set foldmethod=indent
+set foldnestmax=10
+set nofoldenable
+set foldlevel=2
+
+" vim:ft=vim

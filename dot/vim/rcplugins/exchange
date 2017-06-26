@@ -1,0 +1,5 @@
+" Exchange - Operator for exchanging text regions
+
+Plugin 'tommcdo/vim-exchange'
+
+" vim:ft=vim

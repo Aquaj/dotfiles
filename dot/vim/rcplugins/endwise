@@ -1,0 +1,5 @@
+" Endwise - auto-completion of 'end' in ruby
+
+Plugin 'tpope/vim-endwise'
+
+" vim:ft=vim

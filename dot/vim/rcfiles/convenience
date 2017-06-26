@@ -1,0 +1,65 @@
+" Convenience mappings
+"---------------------
+
+" More natural line movements
+nmap j gj
+nmap k gk
+
+" Easy escape
+imap jk <ESC>
+imap kj <ESC>
+imap kl <ESC>
+imap lk <ESC>
+imap hj <ESC>
+imap jh <ESC>
+
+" Escape and save
+imap :w<ENTER> <ESC>:w<CR>
+
+" Easily move between panes
+nmap C-j C-w j
+nmap C-h C-w h
+nmap C-k C-w k
+nmap C-l C-w l
+
+" More natural splitting
+set splitbelow
+set splitright
+
+" Quick edit and sourcing of vimrc
+nmap <leader>vrc :sp $MYVIMRC<CR>
+nmap <leader>so :source $MYVIMRC<CR>
+
+" Switch between last two files easily
+nnoremap <leader><leader> <C-^>
+
+" Remove trailing whitespaces
+autocmd BufWritePre * %s/\s\+$//e
+
+" Easily insert one and only one char
+nmap <silent> <leader>s "=nr2char(getchar())<cr>P
+
+" Enable % switching from opening to closing
+runtime macros/matchit.vim
+
+" Create directories if not exist on file creation
+if !exists('*s:MkNonExDir')
+  function s:MkNonExDir(file, buf)
+      if empty(getbufvar(a:buf, '&buftype')) && a:file!~#'\v^\w+\:\/'
+          let dir=fnamemodify(a:file, ':h')
+          if !isdirectory(dir)
+              call mkdir(dir, 'p')
+          endif
+      endif
+  endfunction
+
+  augroup BWCCreateDir
+      autocmd!
+      autocmd BufWritePre * :call s:MkNonExDir(expand('<afile>'), +expand('<abuf>'))
+  augroup END
+end
+
+"Enable auto-saving of session
+autocmd VimEnter * Obsession ~/.vim-tmp/
+
+" vim:ft=vim

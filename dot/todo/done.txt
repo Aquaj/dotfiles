@@ -1,0 +1,9 @@
+x 2017-06-19 test +test +subtest
+x 2017-06-19 test
+x 2017-06-20 2017-06-19 Martin's issue with Opportunities and Affairs. +Ekylibre +Urgence @job
+x 2017-06-20 2017-06-19 Pierre's issue with JEI#create (see 2017-06-19 mail) +Ekylibre +Urgence @job
+x 2017-06-21 Clean up the Trello and PRs. @job +Ekylibre
+x 2017-06-21 Antoine's problem fixed-asset-generating purchase (id: 5707) +Urgence +Ekylibre @job
+x 2017-06-21 Checkout Vivek's PRs +Ekylibre @job +ExternalDevs
+x 2017-06-21 Explain issue with graph to Sandy +Ekylibre +ExternalDevs @job
+x 2017-06-26 Finish setting up my desktop again.

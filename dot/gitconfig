@@ -23,6 +23,8 @@
   dt  = difftool
   stat = !git --no-pager diff --stat
 
+  branches = for-each-ref --sort=-committerdate --format=\"%(color:blue)%(authordate:relative)\t%(color:red)%(authorname)\t%(color:white)%(color:bold)%(refname:short)\" refs/remotes
+
   # Clean merged branches
   sweep = !git branch --merged master | grep -v 'master$' | xargs git branch -d && git remote prune origin
 
@@ -48,4 +50,29 @@
   mergeoptions = --no-edit
 [user]
 	email = jeremie.bonal@gmail.com
-	name = Jeremie Bonal
+	name = Jérémie
+	signingkey = E160F78C
+	name = Jérémie
+	name = Jérémie
+	name = Jérémie
+	name = Jérémie
+	name = Jérémie
+	name = Jérémie
+	name = Jérémie
+	name = Jérémie
+	name = Jérémie
+	name = Jérémie
+	name = Jérémie
+	name = Jérémie
+	name = Jérémie
+	name = Jérémie
+	name = Jérémie
+	name = Jérémie
+	name = Jérémie
+	name = Jérémie
+	name = Jérémie
+	name = Jérémie
+	name = Jérémie
+	name = Jérémie
+[http]
+	postBuffer = 524288000

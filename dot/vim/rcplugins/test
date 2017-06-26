@@ -1,0 +1,7 @@
+" Test - running test suites and specific tests with vim
+
+Plugin 'janko-m/vim-test'
+
+let test#strategy = "vtr"
+
+" vim:ft=vim

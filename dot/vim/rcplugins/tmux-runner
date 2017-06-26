@@ -1,0 +1,5 @@
+" Tmux-Runner - integration of vim in tmux
+
+Plugin 'christoomey/vim-tmux-runner'
+
+" vim:ft=vim

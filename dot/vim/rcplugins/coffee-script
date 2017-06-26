@@ -1,0 +1,5 @@
+" CoffeeScript - coffeescript syntax
+
+Plugin 'kchmck/vim-coffee-script'
+
+" vim:ft=vim

@@ -1,0 +1,5 @@
+" CoffeeScript related settings
+
+autocmd BufNewFile,BufRead *.js.coffee set syntax=coffee
+
+" vim:ft=vim

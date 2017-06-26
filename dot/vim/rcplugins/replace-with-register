@@ -1,0 +1,10 @@
+" ReplaceWithRegister - add `gr` operator to 'replace' over a text object
+
+Plugin 'vim-scripts/ingo-library'
+Plugin 'vim-scripts/ReplaceWithRegister'
+Plugin 'vim-scripts/ReplaceWithSameIndentRegister'
+
+nmap <leader>gr "*gr
+nmap <leader>gR "*gR
+
+" vim:ft=vim

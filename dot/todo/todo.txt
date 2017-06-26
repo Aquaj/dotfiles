@@ -1,0 +1,17 @@
+Code: The Language of Computers +Culture @books
+Martin Fowler's Refactoring +Culture +Tech @books
+(B) Fix FinancialYear#close +Ekylibre @job
+Parcel.sort_by(&:first_available_date) replacement by a SQL command using COALESCE +Ekylibre +Refactoring @job
+(B) Fix stock_merging +Ekylibre
+(B) Fix intervention_parameter_variety +Ekylibre
+Stop doubting yourself. +Lifestyle @life
+Do what needs to be done. +Lifestyle @life
+Speak your mind. +Lifestyle @life
+Stop thinking you're better than people. +Lifestyle @life
+Set up a real git dotfiles repo +Tech +config
+Finish watching the Design Pattern feast +Tech +Culture @rubytapas
+Watch Thoughtbot's Playbook +Tech +Culture @upcase
+(B) Modify bookkeep in purchase to only bookkeep when "interesting" attributes have been modified. +Urgence +Ekylibre @job
+(C) Improve multi-parcel invoicing performance. +performance +Urgence +Ekylibre @job
+Do the config to be able to do the session switching and all (tat) +tmux +config @upcase
+(A) Do the XML template for Emma/IMEPE. +Ekylibre @job

@@ -1,0 +1,6 @@
+" Misc - various useful vim functions
+
+Plugin 'xolox/vim-misc'
+
+" vim:ft=vim
+

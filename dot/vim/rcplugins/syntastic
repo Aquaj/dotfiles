@@ -1,0 +1,5 @@
+" Syntastic - Linter and syntax checker
+
+Plugin 'scrooloose/syntastic'
+
+" vim:ft=vim

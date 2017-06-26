@@ -1,0 +1,5 @@
+" SQL-Heredoc - SQL syntax in ruby <<-SQL heredocs
+
+Plugin 'aliou/sql-heredoc.vim'
+
+" vim:ft=vim

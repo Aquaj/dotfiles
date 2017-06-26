@@ -1,0 +1,5 @@
+" WordMotion - allow CamelCase & snake_case word motions in vim
+
+Plugin 'chaoren/vim-wordmotion'
+
+" vim:ft=vim

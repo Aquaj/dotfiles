@@ -1,0 +1,5 @@
+" Rake - rake integration and syntax in vim
+
+Plugin 'tpope/vim-rake'
+
+" vim:ft=vim
