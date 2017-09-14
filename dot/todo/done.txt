@@ -7,3 +7,9 @@ x 2017-06-21 Antoine's problem fixed-asset-generating purchase (id: 5707) +Urgen
 x 2017-06-21 Checkout Vivek's PRs +Ekylibre @job +ExternalDevs
 x 2017-06-21 Explain issue with graph to Sandy +Ekylibre +ExternalDevs @job
 x 2017-06-26 Finish setting up my desktop again.
+x 2017-06-27 Do the XML template for Emma/IMEPE. +Ekylibre @job
+x 2017-07-07 Fix FinancialYear#close +Ekylibre @job
+x 2017-07-07 Fix intervention_parameter_variety +Ekylibre
+x 2017-07-10 Finish watching the Chain of Responsibility feast +Tech +Culture @rubytapas
+x 2017-07-17 Watch Thoughtbot's Playbook +Tech +Culture @upcase - 5/5 done
+x 2017-07-21 See w/ Brice for Ekylibre accounts of Lucas & Clément @job

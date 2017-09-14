@@ -1,5 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/home/jbonal/code/aquaj/ekylibre'
-let g:netrw_dirhist_2='/home/jbonal/.vim/rcplugins'
-let g:netrw_dirhist_3='/home/jbonal/code/aquaj/ekylibre/app'
+let g:netrw_dirhist_cnt =0

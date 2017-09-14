@@ -1,0 +1,8 @@
+" Easy-Align - Easily move around stuff
+
+Plugin 'junegunn/vim-easy-align'
+
+nmap ga <Plug>(EasyAlign)
+xmap ga <Plug>(EasyAlign)
+
+" vim:ft=vim

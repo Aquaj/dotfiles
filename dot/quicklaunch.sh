@@ -6,17 +6,17 @@ communication() {
   discord&
   slack&
   thunderbird&
+  messengerfordesktop&
 }
 
 files() {
-  seadrive -d $HOME/.seadrive/data -l $HOME/.seadrive/logs/seadrive.log -f $HOME/SeaDrive
-  caja&
+  seadrive-gui&
 }
 
 quicklaunch() {
-  browser
-  communication
-  files
+  browser 2>/dev/null;
+  communication 2> /dev/null;
+  files 2> /dev/null;
 }
 
 alias ql=quicklaunch

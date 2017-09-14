@@ -11,7 +11,7 @@
 
 [core]
   pager = less -FRSX
-	editor = subl -n -w  >/dev/null 2>&1
+  editor = vim
 
 [alias]
   co = checkout
@@ -44,35 +44,19 @@
   autocorrect = 1
 
 [push]
-	default = simple
+  default = simple
 
 [branch "master"]
   mergeoptions = --no-edit
+
 [user]
-	email = jeremie.bonal@gmail.com
-	name = Jérémie
-	signingkey = E160F78C
-	name = Jérémie
-	name = Jérémie
-	name = Jérémie
-	name = Jérémie
-	name = Jérémie
-	name = Jérémie
-	name = Jérémie
-	name = Jérémie
-	name = Jérémie
-	name = Jérémie
-	name = Jérémie
-	name = Jérémie
-	name = Jérémie
-	name = Jérémie
-	name = Jérémie
-	name = Jérémie
-	name = Jérémie
-	name = Jérémie
-	name = Jérémie
-	name = Jérémie
-	name = Jérémie
-	name = Jérémie
+  email = jeremie.bonal@gmail.com
+  name = Jérémie Bonal
+	signingkey = 761E02D9D1736F4D
+
 [http]
 	postBuffer = 524288000
+[github]
+	user = Aquaj
+[gpg]
+	program = gpg2

@@ -28,7 +28,8 @@ export RBENV_ROOT=$HOME/.rbenv
 # Adding rbenv path to the PATH so Ruby works correctly.
 export PATH="${RBENV_ROOT}/shims:${RBENV_ROOT}/bin:${PATH}"
 
-# export PATH="${RBENV_ROOT}/bin:${PATH}"
+# TODO: Remove this once Ekylibre's Java problem is fixed
+export DISABLE_JAVA=1
 
 # Disables unbreakable sapces.
 setxkbmap -option "nbsp:none"
