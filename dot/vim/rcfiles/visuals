@@ -35,9 +35,12 @@ augroup END
 set statusline=\ %f           " Path to the file
 set statusline+=\ %m          " Modified flag
 set statusline+=\ %y          " Filetype
+
 set statusline+=%=          " Switch to the right side
+
 set statusline+=%l          " current line
-set statusline+=/%L       " Total lines
+set statusline+=/
+set statusline+=%L       " Total lines
 
 " Show current command in bottom right corner
 set showcmd
@@ -55,5 +58,14 @@ set foldmethod=indent
 set foldnestmax=10
 set nofoldenable
 set foldlevel=2
+
+" TODO/HACK/IDEA/WARN/... syntax highlighting
+if has("autocmd")
+  " Highlight TODO, FIXME, NOTE, etc.
+  if v:version > 701
+    autocmd Syntax * call matchadd('Error',  '\W\zs\(HACK\|BUG\|WTF\|FIXME\|WARN\)')
+    autocmd Syntax * call matchadd('Todo', '\W\zs\(NOTE\|TODO\|CHANGED\|XXX\|IDEA\|ASK\|???\)')
+  endif
+endif
 
 " vim:ft=vim

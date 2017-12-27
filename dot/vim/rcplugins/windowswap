@@ -1,0 +1,5 @@
+" WindowSwap - Easy split swapping
+
+Plugin 'wesQ3/vim-windowswap'
+
+" vim:ft=vim

@@ -1,0 +1,5 @@
+" Targets - Lots of new vim text objects
+
+Plugin 'wellle/targets.vim'
+
+" vim:ft=vim

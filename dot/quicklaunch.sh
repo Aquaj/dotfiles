@@ -1,5 +1,7 @@
 browser() {
   firefox&
+  spotify&
+  lyricfier&
 }
 
 communication() {
