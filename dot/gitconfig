@@ -52,11 +52,16 @@
 [user]
   email = jeremie.bonal@gmail.com
   name = Jérémie Bonal
-	signingkey = 761E02D9D1736F4D
+  signingKey = 761E02D9D1736F4D
 
 [http]
-	postBuffer = 524288000
+  postBuffer = 524288000
+
 [github]
-	user = Aquaj
+  user = Aquaj
+
 [gpg]
-	program = gpg2
+  program = gpg2
+
+[commit]
+  gpgsign = true
