@@ -20,6 +20,7 @@
   ci = commit
   fo = fetch origin
   d = !git --no-pager diff
+  dc = diff --staged
   dt  = difftool
   stat = !git --no-pager diff --stat
 
@@ -50,8 +51,8 @@
   mergeoptions = --no-edit
 
 [user]
-  email = jeremie.bonal@gmail.com
-  name = Jérémie Bonal
+	email = jeremie.bonal@gmail.com
+	name = Jérémie
   signingKey = 761E02D9D1736F4D
 
 [http]
