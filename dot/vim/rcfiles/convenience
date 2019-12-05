@@ -66,6 +66,6 @@ if !exists('*s:MkNonExDir')
 end
 
 "Enable auto-saving of session
-autocmd VimEnter * Obsession ~/.vim-tmp/
+autocmd VimEnter * Obsession ~/.vim/
 
 " vim:ft=vim

@@ -28,11 +28,11 @@ export RBENV_ROOT=$HOME/.rbenv
 # Adding rbenv path to the PATH so Ruby works correctly.
 export PATH="${RBENV_ROOT}/shims:${RBENV_ROOT}/bin:${PATH}"
 
-# TODO: Remove this once Ekylibre's Java problem is fixed
-export DISABLE_JAVA=1
+# Adding icu4c path to the PATH for postgres
+export PATH="/usr/local/opt/icu4c/bin:/usr/local/opt/icu4c/sbin:${PATH}"
 
 # Disables unbreakable sapces.
-setxkbmap -option "nbsp:none"
+# setxkbmap -option "nbsp:none"
 
 # Gather handy aliases
 [[ -f "$HOME/.aliases" ]] && source "$HOME/.aliases"

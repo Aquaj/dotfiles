@@ -1,7 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/home/jbonal/Code/eky/app/views/settings'
 let g:netrw_dirhist_2='/home/jbonal/Code/eky/app/views/settings/myselves'
 let g:netrw_dirhist_3='/home/jbonal/Code/eky/app/views/settings'
 let g:netrw_dirhist_4='/home/jbonal/Code/eky'
 let g:netrw_dirhist_5='/home/jbonal/Code/saas/app'
+let g:netrw_dirhist_6='/Users/aquaj/Code/dotfiles/dot/vim/rcfiles'
+let g:netrw_dirhist_7='/Users/aquaj/Code/dotfiles/dot/vim'
