@@ -1,7 +1,7 @@
 .DS_Store
 
 *.swp
-dot/vim/netrwhist
+dot/vim/.netrwhist
 dot/vim/bundle/
 
 Session.vim
