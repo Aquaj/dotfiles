@@ -1,0 +1,66 @@
+# Terraform easy init command alias
+tf-init() {
+  terraform init -backend-config=key=$(ORIGIN=$(git remote get-url origin \
+  | sed "s,:,/,g" \
+  | rev \
+  | cut -d/ -f -3 \
+  | rev | sed "s,.git$,,g" \
+  | sed -E "s,.*@(.*),\1,g") ;\
+  CURPATH=$(pwd | sed "s,$(git rev-parse --show-toplevel),,1") ; echo $ORIGIN$CURPATH.tfstate)
+}
+# Terraform easy
+tf-ws() {
+    if [[ "$#" -eq 1 ]]; then
+        terraform workspace select $1
+    else
+        terraform workspace list
+    fi
+}
+# Terraform plan with vars files in vars folder exists
+tf-plan() {
+  if [[ -d "vars" ]]; then
+    if ! [[ $(terraform workspace show) == "default" ]]; then
+      terraform plan -var-file="vars/$(terraform workspace show).tfvars"
+    else
+      echo "\033[0;31mNo operations must be executed in 'default' workspace for multi-env project\033[0m"
+    fi
+  else
+    terraform plan
+  fi
+}
+# Terraform apply with vars files in vars folder exists
+tf-apply() {
+  if [[ -d "vars" ]]; then
+    if ! [[ $(terraform workspace show) == "default" ]]; then
+      terraform apply -var-file="vars/$(terraform workspace show).tfvars"
+    else
+      echo "\033[0;31mNo operations must be executed in 'default' workspace for multi-env project\033[0m"
+    fi
+  else
+    terraform apply
+  fi
+}
+
+# Activate tf debug
+alias tf-debug-enable='export TF_LOG=debug'
+
+# Activate tf debug
+alias tf-debug-disable='unset TF_LOG'
+
+# AWS wrapper using Google Auth
+awswrap() {
+  NOW=`date +%s`;
+  AWS_TOKEN_EXPIRE_DATE=`grep aws_session_expiration ~/.aws/credentials | awk {'print $3'} | awk -F'+' {'print $1'}`;
+  TIMESTAMP_AWS_TOKEN=`date -j -f "%FT%H:%M:%S" "$AWS_TOKEN_EXPIRE_DATE" "+%s"`
+  if [[ $NOW -lt $TIMESTAMP_AWS_TOKEN ]]; then
+    echo 'token AWS is valid, skiping token refresh'
+    \aws "$@";
+  else
+    echo "token AWS outdated, please refresh it"
+    aws-google-auth -u __MAIL__ -I C00sd7n7s -S 396038499304 -R eu-central-1 -k
+    \aws "$@";
+  fi
+}
+alias aws=awswrap
+
+#vim:ft=config

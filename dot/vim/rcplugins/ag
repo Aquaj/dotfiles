@@ -1,0 +1,5 @@
+" Ag - Silver Searcher plug into vim
+
+Plugin 'rking/ag.vim'
+
+" vim:ft=vim

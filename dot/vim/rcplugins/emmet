@@ -1,0 +1,13 @@
+" Emmet - Shortcuts to write html
+
+Plugin 'mattn/emmet-vim'
+
+let g:user_emmet_leader_key='<C-T>'
+
+let g:user_emmet_settings = {
+  \  'javascript.jsx' : {
+    \      'extends' : 'jsx',
+    \  },
+  \}
+
+" vim:ft=vim

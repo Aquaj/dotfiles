@@ -1,5 +1,0 @@
-" todo.txt - Vim syntax and mapping for todo.txt files
-
-Plugin 'freitass/todo.txt-vim'
-
-" vim:ft=vim

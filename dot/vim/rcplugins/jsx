@@ -1,0 +1,5 @@
+" JSX - JSX syntax highlighting for vim
+
+Plugin 'mxw/vim-jsx'
+
+" vim:ft=vim

@@ -1,16 +1,4 @@
-(A) Agile Manifesto +Culture +Management @books
-(C) Improve multi-parcel invoicing performance. +performance +Urgence +Ekylibre @job
-(C) Modify bookkeep in purchase to only bookkeep when "interesting" attributes have been modified. +Urgence +Ekylibre @job
-(D) Finish the Ruby Challenges trail +Tech +Culture @upcase - 1/5 done
-Code: The Language of Computers +Culture @books
-Do the config to be able to do the session switching and all (tat) +tmux +config @upcase
-Do what needs to be done. +Lifestyle @life
-Finish watching the Design Pattern feast +Tech +Culture @rubytapas 3/8
-Install Git-related Todo.txt addons +Tech +config
-Martin Fowler's Refactoring +Culture +Tech @books
-Parcel.sort_by(&:first_available_date) replacement by a SQL command using COALESCE +Ekylibre +Refactoring @job
-Practical Object-Oriented Design in Ruby +Culture +Tech @books
-Set up a real git dotfiles repo +Tech +config
-Speak your mind. +Lifestyle @life
-Stop doubting yourself. +Lifestyle @life
-Stop thinking you're better than people. +Lifestyle @life
+Set up travis on eky/core
+Merge accountancy into eky/core
+Check out Hound CI
+Clean out PRs/branches on the various repos

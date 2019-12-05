@@ -21,6 +21,9 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
+" Remove auto lin-break insertion
+set textwidth=0 wrapmargin=0
+
 " Set encoding to utf-8
 if has("multi_byte")
   set encoding=utf-8
@@ -28,9 +31,5 @@ if has("multi_byte")
 else
   echoerr "Sorry, this version of (g)vim was not compiled with +multi_byte"
 endif
-
-" Centralize .swps
-set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
-set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
 " vim:ft=vim

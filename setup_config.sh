@@ -58,6 +58,9 @@ sudo apt-get install -y tmux
 mkdir -p ~/.tmux/plugins
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
+echo "Installing tools..."
+sudo apt-get install -y bat
+
 echo "Installing Todo.sh"
 curl -L https://github.com/downloads/ginatrapani/todo.txt-cli/todo.txt_cli-2.9.zip > /tmp/todo.sh.zip
 unzip /tmp/todo.sh.zip -d /tmp/

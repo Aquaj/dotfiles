@@ -1,0 +1,5 @@
+"JavaScript - Javascript highlighting. Dependency of VimJSX.
+
+Plugin 'pangloss/vim-javascript'
+"
+" vim:ft=vim

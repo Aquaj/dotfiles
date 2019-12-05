@@ -1,0 +1,5 @@
+" GraphQL - Syntax highlighting for GraphQL
+
+Plugin 'jparise/vim-graphql'
+
+" vim:ft=vim

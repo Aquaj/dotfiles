@@ -1,4 +1,4 @@
-" Commentary - comment manipulation
+" Commentary - Handling of comments
 
 Plugin 'tpope/vim-commentary'
 

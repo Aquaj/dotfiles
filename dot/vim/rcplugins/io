@@ -1,0 +1,6 @@
+" Io - Syntax highlighting for Io
+
+Plugin 'andreimaxim/vim-io'
+
+" vim:ft=vim
+
