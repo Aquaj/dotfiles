@@ -2,3 +2,5 @@
 
 *.swp
 dot/vim/bundle/
+
+Session.vim
