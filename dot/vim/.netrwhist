@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =5
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/Users/aquaj/Code/dotfiles/.git'
 let g:netrw_dirhist_5='/Users/aquaj/Code/job/lunchr/banking'
 let g:netrw_dirhist_4='/Users/aquaj/Code/job/lunchr/backend'
 let g:netrw_dirhist_3='/Users/aquaj/Code/job/lunchr/banking'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_0='/Users/aquaj/Code/job/lunchr/backend/customer'
 let g:netrw_dirhist_9='/Users/aquaj/Code/job/lunchr/backend/admin'
 let g:netrw_dirhist_8='/Users/aquaj/Code/job/lunchr/backend'
 let g:netrw_dirhist_7='/Users/aquaj/Code/job/lunchr/backend/common'
-let g:netrw_dirhist_6='/Users/aquaj/Code/job/lunchr/backend'
