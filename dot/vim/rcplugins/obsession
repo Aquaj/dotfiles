@@ -1,5 +1,0 @@
-" Obsession - vim automatic session saving
-
-Plugin 'tpope/vim-obsession'
-
-" vim:ft=vim

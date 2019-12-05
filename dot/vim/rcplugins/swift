@@ -1,0 +1,5 @@
+" Swift - Indent and syntax coloring for Swift files
+
+Plugin 'keith/swift.vim'
+
+" vim:ft=vim

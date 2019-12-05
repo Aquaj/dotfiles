@@ -4,7 +4,7 @@ Plugin 'vim-scripts/ingo-library'
 Plugin 'vim-scripts/ReplaceWithRegister'
 Plugin 'vim-scripts/ReplaceWithSameIndentRegister'
 
-nmap <leader>gr "*gr
-nmap <leader>gR "*gR
+nmap <leader>gr ""gr
+nmap <leader>gR ""gR
 
 " vim:ft=vim

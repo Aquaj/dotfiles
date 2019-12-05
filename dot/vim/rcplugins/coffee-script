@@ -2,4 +2,6 @@
 
 Plugin 'kchmck/vim-coffee-script'
 
+autocmd BufNewFile,BufRead *.js.coffee set syntax=coffee
+
 " vim:ft=vim

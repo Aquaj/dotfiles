@@ -21,6 +21,9 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
+" Remove auto lin-break insertion
+set textwidth=0 wrapmargin=0
+
 " Set encoding to utf-8
 if has("multi_byte")
   set encoding=utf-8

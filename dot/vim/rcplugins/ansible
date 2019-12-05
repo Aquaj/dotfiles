@@ -1,0 +1,5 @@
+" Ansible - Ansible syntax highlighting
+
+Plugin 'pearofducks/ansible-vim'
+
+" vim:ft=vim

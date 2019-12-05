@@ -1,0 +1,6 @@
+" PGsql - Postgres syntax highlighting
+
+Plugin 'lifepillar/pgsql.vim'
+let g:sql_type_default = 'pgsql'
+
+" vim:ft=vim

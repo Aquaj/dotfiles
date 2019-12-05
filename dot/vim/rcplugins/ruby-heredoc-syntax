@@ -1,0 +1,17 @@
+" vim-ruby-heredoc-syntax - Heredoc syntax for Ruby
+
+Plugin 'joker1007/vim-ruby-heredoc-syntax'
+
+" Add ruby rule
+let g:ruby_heredoc_syntax_filetypes = {
+     \ "ruby" : {
+     \   "start" : "RUBY",
+     \},
+     \ "pgsql" : {
+     \   "start" : "SQL",
+     \},
+     \ "json" : {
+     \   "start" : "JSON",
+     \},
+  \}
+" vim:ft=vim

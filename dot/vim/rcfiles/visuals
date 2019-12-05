@@ -38,9 +38,7 @@ set statusline+=\ %y          " Filetype
 
 set statusline+=%=          " Switch to the right side
 
-set statusline+=%l          " current line
-set statusline+=/
-set statusline+=%L       " Total lines
+set statusline+=%c:%l/%L          " current pos : current line / total lines
 
 " Show current command in bottom right corner
 set showcmd
@@ -56,7 +54,6 @@ nnoremap <C-y> 3<C-y>
 " Folding
 set foldmethod=indent
 set foldnestmax=10
-set nofoldenable
 set foldlevel=2
 
 " TODO/HACK/IDEA/WARN/... syntax highlighting

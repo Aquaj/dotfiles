@@ -58,6 +58,9 @@ sudo apt-get install -y tmux
 mkdir -p ~/.tmux/plugins
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
+echo "Installing tools..."
+sudo apt-get install -y bat
+
 echo "Installing Vundle.vim..."
 rm -rf ~/.vim/bundle/Vundle.vim/*
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim

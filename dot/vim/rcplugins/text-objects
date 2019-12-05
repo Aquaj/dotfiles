@@ -1,8 +1,7 @@
 " TextObjects - Custom text objects
 
-Plugin 'kana/vim-textobj-user'
-Plugin 'kana/vim-textobj-line'
+Plugin 'kana/vim-textobj-user' " Necessary for the next two
 Plugin 'kana/vim-textobj-indent'
-Plugin 'kana/vim-textobj-entire'
+Plugin 'nelstrom/vim-textobj-rubyblock'
 
 " vim:ft=vim

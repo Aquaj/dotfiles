@@ -8,13 +8,12 @@ nmap k gk
 " Easy escape
 imap jk <ESC>
 imap kj <ESC>
-imap kl <ESC>
-imap lk <ESC>
-imap hj <ESC>
-imap jh <ESC>
 
 " Escape and save
 imap :w<ENTER> <ESC>:w<CR>
+
+" Remap C-k as it's taken by tmux and navigation
+imap C-g C-k
 
 " Easily move between panes
 nmap C-j C-w j
@@ -35,9 +34,6 @@ nnoremap <leader><leader> <C-^>
 
 " Remove trailing whitespaces
 autocmd BufWritePre * %s/\s\+$//e
-
-" Easily insert one and only one char
-nmap <silent> <leader>s "=nr2char(getchar())<cr>P
 
 " Enable % switching from opening to closing
 runtime macros/matchit.vim
@@ -67,5 +63,15 @@ end
 
 "Enable auto-saving of session
 autocmd VimEnter * Obsession ~/.vim/
+
+" Shows the diff between a buffer and the file on disk
+function! s:DiffWithSaved()
+  let filetype=&ft
+  diffthis
+  vnew | r # | normal! 1Gdd
+  diffthis
+  exe "setlocal bt=nofile bh=wipe nobl noswf ro ft=" . filetype
+endfunction
+com! DiffSaved call s:DiffWithSaved()
 
 " vim:ft=vim
